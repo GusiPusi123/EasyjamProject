@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3202167839841525525}
   - component: {fileID: 989415525665360214}
   - component: {fileID: 126139490536493992}
-  - component: {fileID: 1160984515097698031}
   m_Layer: 0
   m_Name: Screemer1
   m_TagString: Screemer1
@@ -217,16 +216,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1160984515097698031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4998010576006197706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74f823a668e4fc2d6915648d0081291c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}

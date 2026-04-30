@@ -51,6 +51,7 @@ public class FirstPersonLook : MonoBehaviour
 
     // Добавьте ссылку на панель
     public GameObject pausePanel;
+    public GameObject NoteDead;
 
     void Reset()
     {
@@ -68,6 +69,12 @@ public class FirstPersonLook : MonoBehaviour
     {
         // Проверяем, открыта ли панель
         if (pausePanel != null && pausePanel.activeSelf)
+        {
+            // Если панель открыта, ничего не вращаем
+            return;
+        }
+        // Проверяем, открыта ли панель
+        if (NoteDead != null && NoteDead.activeSelf)
         {
             // Если панель открыта, ничего не вращаем
             return;

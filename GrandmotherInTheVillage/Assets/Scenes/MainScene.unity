@@ -913,7 +913,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &284343384
 BoxCollider:
@@ -1019,6 +1019,7 @@ MonoBehaviour:
   correctCode: 1234
   toggleUIKey: 101
   interactionDistance: 1.5
+  playerRigidbody: {fileID: 1764242972}
 --- !u!1 &328400917
 GameObject:
   m_ObjectHideFlags: 0
@@ -4768,6 +4769,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4207293392497186, guid: 81fc5a27e184ba04abd3f425c30cd5fd, type: 3}
   m_PrefabInstance: {fileID: 15361215}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &1764242972 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 54063890643546284, guid: 81fc5a27e184ba04abd3f425c30cd5fd, type: 3}
+  m_PrefabInstance: {fileID: 15361215}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1783782537 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1593727746557118, guid: 81fc5a27e184ba04abd3f425c30cd5fd, type: 3}
@@ -5246,6 +5252,10 @@ PrefabInstance:
     - target: {fileID: 3911380109251399211, guid: d03e7f993f9bfd44ba7d6615d39af44f, type: 3}
       propertyPath: m_Name
       value: ScremerGrandMother
+      objectReference: {fileID: 0}
+    - target: {fileID: 3911380109251399211, guid: d03e7f993f9bfd44ba7d6615d39af44f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4498951296661840358, guid: d03e7f993f9bfd44ba7d6615d39af44f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5910,7 +5920,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 9186995059673106906, guid: 5339c49295a8c1f49ba96ec4d61f3ed7, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6346957040480316394, guid: 5339c49295a8c1f49ba96ec4d61f3ed7, type: 3}
       insertIndex: -1

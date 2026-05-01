@@ -147,6 +147,8 @@ public class CodeLockInteraction : MonoBehaviour
     public KeyCode toggleUIKey = KeyCode.E; // клавиша для открытия/закрытия UI
     public float interactionDistance = 3f; // дистанция для взаимодействия
 
+    public Rigidbody playerRigidbody;
+
     private string inputCode = "";
     private bool isUIActive = false;
     private Transform playerCamera;
@@ -159,11 +161,21 @@ public class CodeLockInteraction : MonoBehaviour
     {
         // Получаем камеру (например, Main Camera)
         playerCamera = Camera.main.transform;
+
+        // Если Rigidbody не назначен, можно попытаться найти его автоматически
+        // if (playerRigidbody == null)
+        // {
+        //     GameObject player = GameObject.FindGameObjectWithTag("Player");
+        //     if (player != null)
+        //     {
+        //         playerRigidbody = player.GetComponent<Rigidbody>();
+        //     }
+        // }
     }
 
     void Update()
     {
-        // Проверяем, смотрите ли вы на объект и нажата ли клавиша E
+        // Проверка, смотрите ли вы на объект и нажата ли клавиша E
         if (IsLookingAtLock() && Input.GetKeyDown(toggleUIKey))
         {
             if (isUIActive)
@@ -176,12 +188,10 @@ public class CodeLockInteraction : MonoBehaviour
             }
         }
 
-        // Обновляем таймер, если он запущен, независимо от timeScale
+        // Обновляем таймер, если он запущен
         if (timerRunning)
         {
             timer += Time.unscaledDeltaTime;
-            // Здесь можете проверить, если нужно, по истечении времени что-то делать
-            // например: if (timer >= 10f) { ... }
         }
     }
 
@@ -192,7 +202,6 @@ public class CodeLockInteraction : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, interactionDistance))
         {
-            // Проверяем, что луч попал в этот объект
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
                 return true;
@@ -207,10 +216,13 @@ public class CodeLockInteraction : MonoBehaviour
         inputCode = "";
         UpdateCodeDisplay();
 
-        // Отключаем приостановку времени
-        // Time.timeScale = 0f; // Можно оставить, если хотите, чтобы UI был без времени (заморозить игру)
-        // Для работы таймера лучше оставить timeScale = 1
+        // Отключить Rigidbody, чтобы нельзя было двигаться
+        if (playerRigidbody != null)
+        {
+            playerRigidbody.isKinematic = true;
+        }
 
+        // Сделать курсор видимым и разблокировать
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
 
@@ -221,9 +233,13 @@ public class CodeLockInteraction : MonoBehaviour
     {
         codeLockUI.SetActive(false);
 
-        // Восстановление времени
-        // Time.timeScale = 1f; // Если вы использовали его для остановки, раскомментируйте
+        // Включить Rigidbody обратно
+        if (playerRigidbody != null)
+        {
+            playerRigidbody.isKinematic = false;
+        }
 
+        // Спрятать курсор и заблокировать его
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
@@ -256,13 +272,11 @@ public class CodeLockInteraction : MonoBehaviour
     {
         if (inputCode == correctCode)
         {
-            // Запускаем таймер, если он еще не запущен
             if (!timerRunning)
             {
                 timerRunning = true;
                 timer = 0f;
             }
-            // Переход на другую сцену
             SceneManager.LoadScene(sceneName);
         }
         else

@@ -1,0 +1,379 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &632546458618728512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9123567165374915529}
+  - component: {fileID: 4246402988784464520}
+  - component: {fileID: 211916644497740332}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &9123567165374915529
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632546458618728512}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6488868615571925119}
+  m_Father: {fileID: 6552255492283990207}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.0000019073486, y: -0.00001335144}
+  m_SizeDelta: {x: 328.4631, y: 808.2009}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4246402988784464520
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632546458618728512}
+  m_CullTransparentMesh: 1
+--- !u!114 &211916644497740332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632546458618728512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: e77ba498b38881a0e90e91c8d0a6ddcb, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &2979618399808946043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5391152730445388088}
+  - component: {fileID: 2375369580595220174}
+  - component: {fileID: 2229680228575701605}
+  - component: {fileID: 6523736005414670644}
+  m_Layer: 5
+  m_Name: Check
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5391152730445388088
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2979618399808946043}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6552255492283990207}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!223 &2375369580595220174
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2979618399808946043}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &2229680228575701605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2979618399808946043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!114 &6523736005414670644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2979618399808946043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!1 &4475678293143665749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6552255492283990207}
+  - component: {fileID: 9158527982962477199}
+  - component: {fileID: 1873458308085023391}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6552255492283990207
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4475678293143665749}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9123567165374915529}
+  m_Father: {fileID: 5391152730445388088}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &9158527982962477199
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4475678293143665749}
+  m_CullTransparentMesh: 1
+--- !u!114 &1873458308085023391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4475678293143665749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.6156863}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &8496404536061105455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6488868615571925119}
+  - component: {fileID: 7375163044656807871}
+  - component: {fileID: 1106143484996765095}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6488868615571925119
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8496404536061105455}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9123567165374915529}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.77158}
+  m_SizeDelta: {x: 365, y: 794.0103}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7375163044656807871
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8496404536061105455}
+  m_CullTransparentMesh: 1
+--- !u!114 &1106143484996765095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8496404536061105455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "**************************************************\n          \u041E\u041E\u041E
+    \"\u0418\u0417\u0418\u041A\u041E\u0414\"\n          \u041C\u0430\u0433\u0430\u0437\u0438\u043D
+    \u0446\u0438\u0444\u0440\u043E\u0432\u044B\u0445 \u0442\u043E\u0432\u0430\u0440\u043E\u0432\n         
+    \"EasyCodeMarket\"\n          \u0421\u0430\u0439\u0442: easycodemarket.ru\n         
+    \u0422\u0435\u043B: 8-800-555-90-90\n          support@easycodemarket.ru\n**************************************************\n         
+    \u041A\u0410\u0421\u0421\u041E\u0412\u042B\u0419 \u0427\u0415\u041A / \u041F\u0420\u0418\u0425\u041E\u0414\n**************************************************\n\u0421\u043C\u0435\u043D\u0430
+    \u2116: 220\n\u0427\u0435\u043A \u2116: 00417\n\u0421\u043C\u0435\u043D\u0430
+    \u043E\u0442\u043A\u0440\u044B\u0442\u0430: 01.05.2026 08:00\n\u0414\u0430\u0442\u0430
+    \u0438 \u0432\u0440\u0435\u043C\u044F: 01.05.2026 14:32:17\n**************************************************\n\u041A\u0430\u0441\u0441\u0438\u0440:
+    \u0418\u0432\u0430\u043D\u043E\u0432\u0430 \u041C.\u0410. (\u0421\u043C\u0435\u043D\u0430
+    1)\n--------------------------------------------------\n \u0422\u041E\u0412\u0410\u0420\u041D\u0410\u042F
+    \u041D\u0410\u041A\u041B\u0410\u0414\u041D\u0410\u042F\n--------------------------------------------------\n
+    1. \u0426\u0438\u0444\u0440\u043E\u0432\u043E\u0439 \u0437\u0430\u043C\u043E\u043A
+    SmartLock Pro X1\n    (\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u043D\u044B\u0439
+    \u043A\u043B\u044E\u0447 \u0430\u043A\u0442\u0438\u0432\u0430\u0446\u0438\u0438)\n   
+    \u0412\u0435\u0440\u0441\u0438\u044F: \u0434\u043B\u044F \u0432\u0445\u043E\u0434\u043D\u043E\u0439
+    \u0434\u0432\u0435\u0440\u0438\n    \u041F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u0430:
+    Android/iOS/Wi-Fi\n    \u0410\u0440\u0442\u0438\u043A\u0443\u043B: EASY-SLPRO-2026\n   
+    1 \u0448\u0442.  x  4 999.00 \u0440\u0443\u0431.\n    ------------------------------\n   
+    \u0418\u0442\u043E\u0433\u043E \u0442\u043E\u0432\u0430\u0440\u043E\u0432:     
+    9 999.00\n--------------------------------------------------\n \u0421\u041F\u041E\u0421\u041E\u0411
+    \u041E\u041F\u041B\u0410\u0422\u042B:\n \u0411\u0430\u043D\u043A\u043E\u0432\u0441\u043A\u0430\u044F
+    \u043A\u0430\u0440\u0442\u0430 ************4242\n \u0421\u0443\u043C\u043C\u0430
+    \u043E\u043F\u043B\u0430\u0442\u044B:        9 999.00\n \u041A\u043E\u0434 \u0430\u0432\u0442\u043E\u0440\u0438\u0437\u0430\u0446\u0438\u0438:    
+    784512\n--------------------------------------------------\n \u0421\u0423\u041C\u041C\u0410
+    \u041D\u0414\u0421 (20%):       833.17\n \u0412\u0421\u0415\u0413\u041E \u041A
+    \u041E\u041F\u041B\u0410\u0422\u0415:      9 999.00\n--------------------------------------------------\n
+    \u041F\u043E\u043B\u0443\u0447\u0435\u043D\u043E:             9 999.00\n \u0421\u0434\u0430\u0447\u0430:                   
+    0.00\n    \u041A\u043B\u044E\u0447: XXXX-XXXX-XXXX-29A1\n**************************************************\n         
+    \u0414\u041E\u041F\u041E\u041B\u041D\u0418\u0422\u0415\u041B\u042C\u041D\u0410\u042F
+    \u0418\u041D\u0424\u041E\u0420\u041C\u0410\u0426\u0418\u042F\n--------------------------------------------------\n
+    \u0422\u0438\u043F \u043A\u043B\u044E\u0447\u0430: \u041F\u043E\u0436\u0438\u0437\u043D\u0435\u043D\u043D\u0430\u044F
+    \u043B\u0438\u0446\u0435\u043D\u0437\u0438\u044F\n \u0421\u0440\u043E\u043A \u0430\u043A\u0442\u0438\u0432\u0430\u0446\u0438\u0438:
+    \u0434\u043E 01.06.2026\n \u0418\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u044F:
+    easycodemarket.ru/help/smartlock\n \u0422\u0435\u0445\u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0430:
+    help@easycodemarket.ru\n**************************************************\n  
+    \u0421\u041F\u0410\u0421\u0418\u0411\u041E \u0417\u0410 \u041F\u041E\u041A\u0423\u041F\u041A\u0423
+    \u0412 EasyCodeMarket!\n   \u0412\u0430\u0448 \u0447\u0435\u043A \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D
+    \u043D\u0430 Email: user****@mail.ru\n**************************************************\n
+    \u0424\u0418\u0421\u041A\u0410\u041B\u042C\u041D\u042B\u0419 \u0414\u041E\u041A\u0423\u041C\u0415\u041D\u0422\n
+    \u0424\u0438\u0441\u043A. \u043F\u0440\u0438\u0437\u043D\u0430\u043A: 3761492815\n
+    \u0424\u041D \u2116: 9999078900456721\n \u0424\u0414 \u2116: 185734\n \u0421\u041D\u041E:
+    \u041E\u0421\u041D\n \u0420\u041D \u041A\u041A\u0422: 0004785639027456\n \u0417\u041D
+    \u041A\u041A\u0422: 9281000100457832\n \u0421\u0410\u0419\u0422 \u0424\u041D\u0421:
+    www.nalog.gov.ru\n**************************************************"

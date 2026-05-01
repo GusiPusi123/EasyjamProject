@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 1669662528}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -96,7 +96,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 8ddd3c2f1b5384b48b9aa9a11fbdb9f8, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -953,8 +953,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988887123}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.017207745, y: 0.9463126, z: -0.05109065, w: -0.3187258}
-  m_LocalPosition: {x: 29.177, y: 1.7101276, z: -116.083}
+  m_LocalRotation: {x: -0.033248525, y: 0.40118363, z: -0.014577224, w: -0.91527796}
+  m_LocalPosition: {x: 29.961864, y: 0.6497003, z: -106.310646}
   m_LocalScale: {x: 1, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

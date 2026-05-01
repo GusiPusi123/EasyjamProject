@@ -53,6 +53,7 @@ public class FirstPersonLook : MonoBehaviour
     public GameObject pausePanel;
     public GameObject NoteDead;
     public GameObject NoteGrandMother;
+    public GameObject CodeLockPanel;
 
     void Reset()
     {
@@ -81,6 +82,11 @@ public class FirstPersonLook : MonoBehaviour
             return;
         }
         if (NoteGrandMother != null && NoteGrandMother.activeSelf)
+        {
+            // Если панель открыта, ничего не вращаем
+            return;
+        }
+        if (CodeLockPanel != null && CodeLockPanel.activeSelf)
         {
             // Если панель открыта, ничего не вращаем
             return;

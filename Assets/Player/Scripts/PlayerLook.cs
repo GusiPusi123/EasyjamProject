@@ -1,43 +1,4 @@
-﻿// using UnityEngine;
-
-// public class FirstPersonLook : MonoBehaviour
-// {
-//     [SerializeField]
-//     Transform character;
-//     public float sensitivity = 2;
-//     public float smoothing = 1.5f;
-
-//     Vector2 velocity;
-//     Vector2 frameVelocity;
-
-
-//     void Reset()
-//     {
-//         // Get the character from the FirstPersonMovement in parents.
-//         character = GetComponentInParent<Player>().transform;
-//     }
-
-//     void Start()
-//     {
-//         // Lock the mouse cursor to the game screen.
-//         Cursor.lockState = CursorLockMode.Locked;
-//     }
-
-//     void Update()
-//     {
-//         // Get smooth velocity.
-//         Vector2 mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
-//         Vector2 rawFrameVelocity = Vector2.Scale(mouseDelta, Vector2.one * sensitivity);
-//         frameVelocity = Vector2.Lerp(frameVelocity, rawFrameVelocity, 1 / smoothing);
-//         velocity += frameVelocity;
-//         velocity.y = Mathf.Clamp(velocity.y, -90, 90);
-
-//         // Rotate camera up-down and controller left-right from velocity.
-//         transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
-//         character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
-//     }
-// }
-using UnityEngine;
+﻿using UnityEngine;
 
 public class FirstPersonLook : MonoBehaviour
 {
@@ -49,58 +10,56 @@ public class FirstPersonLook : MonoBehaviour
     Vector2 velocity;
     Vector2 frameVelocity;
 
-    // Добавьте ссылку на панель
+    // Ссылки на панели и объекты
     public GameObject pausePanel;
     public GameObject NoteDead;
     public GameObject NoteGrandMother;
     public GameObject CodeLockPanel;
+    public GameObject Code1;
+    public GameObject Code2;
+    public GameObject Code3;
+    public GameObject Code4;
+    public GameObject Note1;
+    public GameObject Check;
 
     void Reset()
     {
-        // Get the character from the FirstPersonMovement in parents.
+        // Получить персонажа из родительского компонента
         character = GetComponentInParent<Player>().transform;
     }
 
     void Start()
     {
-        // Lock the mouse cursor to the game screen.
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
     {
-        // Проверяем, открыта ли панель
-        if (pausePanel != null && pausePanel.activeSelf)
+        // Проверяем, активны ли панели или есть активные записки
+        if ((pausePanel != null && pausePanel.activeSelf) ||
+            (NoteDead != null && NoteDead.activeSelf) ||
+            (NoteGrandMother != null && NoteGrandMother.activeSelf) ||
+            (CodeLockPanel != null && CodeLockPanel.activeSelf) ||
+            (Code1 != null && Code1.activeSelf) ||
+            (Code2 != null && Code2.activeSelf) ||
+            (Code3 != null && Code3.activeSelf) ||
+            (Code4 != null && Code4.activeSelf) ||
+            (Note1 != null && Note1.activeSelf) ||
+            (Check != null && Check.activeSelf))
         {
-            // Если панель открыта, ничего не вращаем
-            return;
-        }
-        // Проверяем, открыта ли панель
-        if (NoteDead != null && NoteDead.activeSelf)
-        {
-            // Если панель открыта, ничего не вращаем
-            return;
-        }
-        if (NoteGrandMother != null && NoteGrandMother.activeSelf)
-        {
-            // Если панель открыта, ничего не вращаем
-            return;
-        }
-        if (CodeLockPanel != null && CodeLockPanel.activeSelf)
-        {
-            // Если панель открыта, ничего не вращаем
             return;
         }
 
-        // Получаем движение мыши
+        // Получение движения мыши
         Vector2 mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
         Vector2 rawFrameVelocity = Vector2.Scale(mouseDelta, Vector2.one * sensitivity);
         frameVelocity = Vector2.Lerp(frameVelocity, rawFrameVelocity, 1 / smoothing);
         velocity += frameVelocity;
         velocity.y = Mathf.Clamp(velocity.y, -90, 90);
 
-        // Вращаем камеру вверх-вниз и персонажа по горизонтали
+        // Вращение камеры по вертикали
         transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
+        // Вращение персонажа по горизонтали
         character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
     }
 }

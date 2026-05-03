@@ -27,7 +27,7 @@ public class NoteGrandFather : MonoBehaviour
             // Увеличьте порог, чтобы быть увереннее, что игрок смотрит прямо
             if (dot > 0.99f) // более строгий порог
             {
-                Debug.Log("Игрок смотрит на объект. dot = " + dot);
+                // Debug.Log("Игрок смотрит на объект. dot = " + dot);
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {

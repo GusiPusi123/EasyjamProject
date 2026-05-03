@@ -4661,6 +4661,7 @@ GameObject:
   - component: {fileID: 919132149088731070}
   - component: {fileID: 919132149088731069}
   - component: {fileID: 919132149088731068}
+  - component: {fileID: 919132149088731071}
   m_Layer: 0
   m_Name: Character_01
   m_TagString: Untagged
@@ -4734,6 +4735,20 @@ PlayableDirector:
     - 0f68d72227673374a84cb02a95eb8e74: {fileID: 607774088}
     - 40d24856b323cde498ba3a9c52b426e7: {fileID: 1494732523}
     - 918615d9ac77a3e43bcff6bfd93e8fb9: {fileID: 1392912746}
+--- !u!114 &919132149088731071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149088731067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3dc433db0ce8664c95a4ef307753579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: MainScene
+  delay: 13.8
 --- !u!1 &1049715461913238147
 GameObject:
   m_ObjectHideFlags: 0

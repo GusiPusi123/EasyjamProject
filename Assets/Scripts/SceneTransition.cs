@@ -9,9 +9,7 @@ public class SceneTransitionWithPersistence : MonoBehaviour
 
     void Start()
     {
-        // Сделать объект постоянным между сценами
-        DontDestroyOnLoad(gameObject);
-        // Запустить корутину для перехода
+        // DontDestroyOnLoad(gameObject);
         StartCoroutine(PlayAnimationAndSwitchScene());
     }
 

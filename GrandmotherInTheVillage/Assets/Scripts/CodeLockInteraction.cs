@@ -143,7 +143,7 @@ public class CodeLockInteraction : MonoBehaviour
     public GameObject codeLockUI; // UI панель с кодлоком
     public Text codeDisplay; // текст для отображения введённых цифр
     public string sceneName = "CatSceneEnd";
-    public string correctCode = "1234"; // правильный код
+    public string correctCode = "6769"; // правильный код
     public KeyCode toggleUIKey = KeyCode.E; // клавиша для открытия/закрытия UI
     public float interactionDistance = 3f; // дистанция для взаимодействия
 

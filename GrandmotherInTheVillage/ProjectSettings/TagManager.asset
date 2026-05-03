@@ -7,6 +7,8 @@ TagManager:
   - CabinetDoor
   - Screemer1
   - Screemer
+  - Key
+  - Door
   layers:
   - Default
   - TransparentFX

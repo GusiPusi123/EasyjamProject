@@ -7,7 +7,6 @@ public class NoteGrandFather : MonoBehaviour
     public Camera playerCamera; // Камера игрока
     public GameObject imagePanel; // Панель с изображением
     private bool isImageOpen = false;
-    private bool isPaused = false;
 
     void Start()
     {
@@ -25,8 +24,11 @@ public class NoteGrandFather : MonoBehaviour
             Vector3 directionToObject = (transform.position - playerCamera.transform.position).normalized;
             float dot = Vector3.Dot(playerCamera.transform.forward, directionToObject);
 
-            if (dot > 0.5f) // Порог для определения, смотрит ли игрок
+            // Увеличьте порог, чтобы быть увереннее, что игрок смотрит прямо
+            if (dot > 0.99f) // более строгий порог
             {
+                Debug.Log("Игрок смотрит на объект. dot = " + dot);
+
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     ToggleImage();
@@ -44,21 +46,13 @@ public class NoteGrandFather : MonoBehaviour
 
             if (isImageOpen)
             {
-                // Открытие изображения — приостановка времени
                 Time.timeScale = 0f;
-                // Отключение управления, если нужно
-                // Например, отключить управление игроком
-                // player.GetComponent<PlayerController>().enabled = false;
             }
             else
             {
-                // Закрытие изображения — возобновление времени
                 Time.timeScale = 1f;
-                // Включение управления обратно
-                // player.GetComponent<PlayerController>().enabled = true;
             }
         }
     }
 }
-
 // NoteGrandFather
